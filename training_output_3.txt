@@ -1,0 +1,358 @@
+# Data params
+# Sequence Length
+sequence_length = 30  # of words in a sequence
+# Batch Size
+batch_size = 100
+
+# data loader - do not change
+train_loader = batch_data(int_text, sequence_length, batch_size)
+
+
+# Training parameters
+# Number of Epochs
+num_epochs = 100
+# Learning Rate
+learning_rate = .001
+
+# Model parameters
+# Vocab size
+vocab_size = len(vocab_to_int)
+# Output size
+output_size = len(vocab_to_int)
+# Embedding Dimension
+embedding_dim = 250
+# Hidden Dimension
+hidden_dim = 250
+# Number of RNN Layers
+n_layers = 2
+
+# Show stats for every n number of batches
+show_every_n_batches = 200
+
+
+
+Creating RNN model. vocab_size: 21388, output_size: 21388, embedding_dim: 250, hidden_dim: 250, n_layers: 2, dropout: 0.5
+Training for 100 epoch(s)...
+Epoch:    1/100   Loss: 6.146315975189209
+
+Epoch:    2/100   Loss: 5.206556024776163
+
+Epoch:    3/100   Loss: 4.9407628513747195
+
+Epoch:    4/100   Loss: 4.759555776512583
+
+Epoch:    5/100   Loss: 4.587735285261263
+
+Epoch:    6/100   Loss: 4.414517633039943
+
+Epoch:    7/100   Loss: 4.266666781621349
+
+Epoch:    8/100   Loss: 4.116982572407835
+
+Epoch:    9/100   Loss: 3.9813087733104977
+
+Epoch:   10/100   Loss: 3.8482887038478144
+
+Epoch:   11/100   Loss: 3.726686427890251
+
+Epoch:   12/100   Loss: 3.602179744829634
+
+Epoch:   13/100   Loss: 3.4842673768900863
+
+Epoch:   14/100   Loss: 3.368075091429431
+
+Epoch:   15/100   Loss: 3.2588058738194734
+
+Epoch:   16/100   Loss: 3.161832996490427
+
+Epoch:   17/100   Loss: 3.056527611382481
+
+Epoch:   18/100   Loss: 2.9539044690051863
+
+Epoch:   19/100   Loss: 2.8807497040591254
+
+Epoch:   20/100   Loss: 2.7873761035777904
+
+Epoch:   21/100   Loss: 2.7018059753006956
+
+Epoch:   22/100   Loss: 2.6216900477104317
+
+Epoch:   23/100   Loss: 2.532137135463933
+
+Epoch:   24/100   Loss: 2.460322364813551
+
+Epoch:   25/100   Loss: 2.4152469069066673
+
+Epoch:   26/100   Loss: 2.3316415532269463
+
+Epoch:   27/100   Loss: 2.264872567822235
+
+Epoch:   28/100   Loss: 2.1958816773963696
+
+Epoch:   29/100   Loss: 2.1325743210436117
+
+Epoch:   30/100   Loss: 2.077832503752275
+
+Epoch:   31/100   Loss: 2.015855948933046
+
+Epoch:   32/100   Loss: 1.9508353576114281
+
+Epoch:   33/100   Loss: 1.905446900261773
+
+Epoch:   34/100   Loss: 1.855387285903648
+
+Epoch:   35/100   Loss: 1.7931171025491324
+
+Epoch:   36/100   Loss: 1.745066635135047
+
+Epoch:   37/100   Loss: 1.6977897906544233
+
+Epoch:   38/100   Loss: 1.6528209781004524
+
+Epoch:   39/100   Loss: 1.6213336649165813
+
+Epoch:   40/100   Loss: 1.5708711528617525
+
+Epoch:   41/100   Loss: 1.5303154880751664
+
+Epoch:   42/100   Loss: 1.4977286152968101
+
+Epoch:   43/100   Loss: 1.4632272377158657
+
+Epoch:   44/100   Loss: 1.4096763728042243
+
+Epoch:   45/100   Loss: 1.3893368872327836
+
+Epoch:   46/100   Loss: 1.3525928672315295
+
+Epoch:   47/100   Loss: 1.3180352975222398
+
+Epoch:   48/100   Loss: 1.3023360211038428
+
+Epoch:   49/100   Loss: 1.2527735727001923
+
+Epoch:   50/100   Loss: 1.2265008599669844
+
+Epoch:   51/100   Loss: 1.1960157539306666
+
+Epoch:   52/100   Loss: 1.1691617235190137
+
+Epoch:   53/100   Loss: 1.1524779718331617
+
+Epoch:   54/100   Loss: 1.1112438600874108
+
+Epoch:   55/100   Loss: 1.0999696256737115
+
+Epoch:   56/100   Loss: 1.0682704532989349
+
+Epoch:   57/100   Loss: 1.0472633742322826
+
+Epoch:   58/100   Loss: 1.027248036179077
+
+Epoch:   59/100   Loss: 1.015781778277773
+
+Epoch:   60/100   Loss: 0.9837568344090523
+
+Epoch:   61/100   Loss: 0.9638804076897978
+
+Epoch:   62/100   Loss: 0.9566704377983556
+
+Epoch:   63/100   Loss: 0.9358923603789975
+
+Epoch:   64/100   Loss: 0.90558731495732
+
+Epoch:   65/100   Loss: 0.882699070153413
+
+Epoch:   66/100   Loss: 0.8663381141444249
+
+Epoch:   67/100   Loss: 0.8652725372250233
+
+Epoch:   68/100   Loss: 0.8448764210196857
+
+Epoch:   69/100   Loss: 0.8303347342343442
+
+Epoch:   70/100   Loss: 0.8096967679683609
+
+Epoch:   71/100   Loss: 0.7921653413009965
+
+Epoch:   72/100   Loss: 0.7742640346991093
+
+Epoch:   73/100   Loss: 0.7743305066217878
+
+Epoch:   74/100   Loss: 0.7514691664915695
+
+Epoch:   75/100   Loss: 0.7375683536633899
+
+Epoch:   76/100   Loss: 0.7316078102147138
+
+Epoch:   77/100   Loss: 0.7305380792328806
+
+Epoch:   78/100   Loss: 0.7135772395013559
+
+Epoch:   79/100   Loss: 0.6950156492014927
+
+Epoch:   80/100   Loss: 0.6868272014338561
+
+Epoch:   81/100   Loss: 0.6819488519570643
+
+Epoch:   82/100   Loss: 0.6600462896655305
+
+Epoch:   83/100   Loss: 0.6543190054821245
+
+Epoch:   84/100   Loss: 0.629537006018539
+
+Epoch:   85/100   Loss: 0.6292409585782575
+
+Epoch:   86/100   Loss: 0.6231372634369114
+
+Epoch:   87/100   Loss: 0.6140909512034972
+
+Epoch:   88/100   Loss: 0.6120358460680001
+
+Epoch:   89/100   Loss: 0.6111545393161902
+
+Epoch:   90/100   Loss: 0.6049578978557779
+
+Epoch:   91/100   Loss: 0.577503525548511
+
+Epoch:   92/100   Loss: 0.5859429476538089
+
+Epoch:   93/100   Loss: 0.5720720942373629
+
+Epoch:   94/100   Loss: 0.5676447613672777
+
+Epoch:   95/100   Loss: 0.5671007648260906
+
+Epoch:   96/100   Loss: 0.5500355269571747
+
+Epoch:   97/100   Loss: 0.5481202431800791
+
+Epoch:   98/100   Loss: 0.5435099756276166
+
+Epoch:   99/100   Loss: 0.5442868261425583
+
+Epoch:  100/100   Loss: 0.5341733046352662
+
+Model Trained and Saved
+/home/nathan/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/serialization.py:256: UserWarning: Couldn't retrieve source code for container of type RNN. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+  
+  
+  
+ kramer:-- burning there's goes goes at him until live us with trying out out out and that's wasnt, i thought it like it, you know, because and i'm not gonna be there, what if i can be friends there right and then they just sit back to them over the day--------------- death!
+
+kramer: yeah, yeah, yeah, yeah, yeah, that's right.
+
+elaine: no no no no no no no no no no no no no no no no no no no no no no no no no no no no no no, what? what did what do you mean? you mean me ever get?
+
+george: my god, i just say until but then we had to spend over with four else, it like it, i'm wants to be over an work.
+
+elaine:(pushing out into jerry) hey are this is here are all this guy?
+
+kramer: well, now.
+
+george: now, now, how you're crazy. you're a good.
+
+george: signed festivus cool for the plane.
+
+george: so, now, this is the softball of fitness boy, what about it in in the hospital and we'll just leave around tomorrow and then just get it to be it that it?
+
+george: yup live succinct dinner to be able for this guy in india and you' out out out?? what do you mean? i mean if we can do anything if we wouldn't want to do it for you for stand this thing?
+
+morty: having someone up a second, now, then i just just just sit down and come down to be back to be a new but i can have any more!
+
+kramer: yeah, i don't think i'm fine. it's fine.(opening over).....
+
+elaine:(triumphant equally) kramer night.(pop away)
+
+george: so he doesn't eating with town and we're gonna make some spare away from the building.
+
+kramer:(to the phone) hey, i did you ever seen this guy for an house for the people.
+
+elaine:(leaving at elaine) oh, that's right.(jovially takes)
+
+jerry well, now you been a tough of back.
+
+elaine: oh no no no no no no no no no no no no no no--!! mr! gimme george!!
+
+puddy: george!(hangs up) the wall... so back.
+
+farmer: look a second, what did i have to talk to you?
+
+elaine: well, actually might want us and we'll love room.
+
+jerry: i don't know what i can like tomorrow.
+
+jerry: yeah, i don't know. it's one from kramer!
+
+elaine: no, that's nice.
+
+jerry: hey, hey, wait, wait, wait, wait, wait, wait, wait, wait, wait, wait, milos. me.
+
+elaine:(impatient
+
+
+
+george: thing--- century-------------- he's--- jerry!(hangs up).!
+
+elaine:(bright)(jerry and turns laughs)
+
+george: so, it's a nice.
+
+puddy: aah.
+
+elaine:(triumphant on a new phone).... problem.(quits)
+
+estelle:"" :"""""""" here! listen.
+
+jerry: just be back.
+
+george: all right.
+
+george: all right.
+
+george: kramer.
+
+computer of course could go to get around for us for dinner.
+
+george: the ray for a little.(picks away) well, i was probably better those its equities! help! they got up the fight.
+
+george: and it's a problem.... you know, you better make a little place. it's not weeks. it's a good about that.
+
+kramer: yeah, yeah, yeah, yeah... you know, this is one big big before.
+
+jerry: no, no no no no no no, no, no, no, no, i like that.
+
+george: it's supposed. jerry. oh, hey, buddy-- buddy- buddy------------ he's got out from the whole life.
+
+kramer: hey look buddy, that's pretty busy.
+
+jerry: it's not a little disoriented machine.
+
+george: so what happened like it?
+
+kramer: yeah, i gotta just get a new parent.
+
+kramer: i think i am like a new time.
+
+elaine:(notices over) so, sure.
+
+jerry: yeah, yeah, yeah. yeah, yeah, yeah, hey, yeah, yeah, that's a deal. i'll go.
+
+george: hey jerry. definitely with me.
+
+george: all right, right. it's a magnificent idea.
+
+elaine: well, uh, uh.. with a gap.(hangs up). right............................ relaxed me a gap(sits comes down)(another phone) well, it's really.
+
+george: it's supposed to meet, how just not going to meet me what this could she's gonna gonna want to eat about this anymore people?
+
+jerry: i'm going of my little problems of music-, he got the whole life with the restaurants.
+
+kramer: yeah, yeah, yeah, that's right.(jerry and george at his phone) well, i haven't.
+
+elaine: hewwo with lorenzo's. jerry... 'mazing with the van thousand of kruger in the building.
+
+elaine:(angry) oh no no no no no no no no no no no no no no no no no no no no no no no no no no yeah, that's, maybe?
+
+

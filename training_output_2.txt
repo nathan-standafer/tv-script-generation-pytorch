@@ -1,0 +1,318 @@
+# Data params
+# Sequence Length
+sequence_length = 50  # of words in a sequence
+# Batch Size
+batch_size = 50
+
+# data loader - do not change
+train_loader = batch_data(int_text, sequence_length, batch_size)
+
+# Training parameters
+# Number of Epochs
+num_epochs = 100
+# Learning Rate
+learning_rate = .001
+
+# Model parameters
+# Vocab size
+vocab_size = len(vocab_to_int)
+# Output size
+output_size = len(vocab_to_int)
+# Embedding Dimension
+embedding_dim = 500
+# Hidden Dimension
+hidden_dim = 500
+# Number of RNN Layers
+n_layers = 3
+
+# Show stats for every n number of batches
+show_every_n_batches = 200
+
+Creating RNN model. vocab_size: 21388, output_size: 21388, embedding_dim: 500, hidden_dim: 500, n_layers: 3, dropout: 0.5
+Training for 100 epoch(s)...
+Epoch:    1/100   Loss: 6.279850816726684
+
+Epoch:    2/100   Loss: 5.4050777253140225
+
+Epoch:    3/100   Loss: 4.989022482646985
+
+Epoch:    4/100   Loss: 4.7699291906999735
+
+Epoch:    5/100   Loss: 4.599536864945058
+
+Epoch:    6/100   Loss: 4.444988941878416
+
+Epoch:    7/100   Loss: 4.280457672108425
+
+Epoch:    8/100   Loss: 4.114064633846283
+
+Epoch:    9/100   Loss: 3.942560962076937
+
+Epoch:   10/100   Loss: 3.796664675969756
+
+Epoch:   11/100   Loss: 3.6419518382361766
+
+Epoch:   12/100   Loss: 3.504167361875598
+
+Epoch:   13/100   Loss: 3.3561143044675332
+
+Epoch:   14/100   Loss: 3.2189474661698503
+
+Epoch:   15/100   Loss: 3.1019725819652
+
+Epoch:   16/100   Loss: 2.9640321456984187
+
+Epoch:   17/100   Loss: 2.8486133103960016
+
+Epoch:   18/100   Loss: 2.732021773129367
+
+Epoch:   19/100   Loss: 2.6223603918981016
+
+Epoch:   20/100   Loss: 2.5169926556978335
+
+Epoch:   21/100   Loss: 2.410906933666615
+
+Epoch:   22/100   Loss: 2.3078378509269672
+
+Epoch:   23/100   Loss: 2.216715183820617
+
+Epoch:   24/100   Loss: 2.0995171773299743
+
+Epoch:   25/100   Loss: 2.0143385305163566
+
+Epoch:   26/100   Loss: 1.944436661313089
+
+Epoch:   27/100   Loss: 1.8493762364548243
+
+Epoch:   28/100   Loss: 1.7634890400961545
+
+Epoch:   29/100   Loss: 1.695885901370745
+
+Epoch:   30/100   Loss: 1.6141198409742183
+
+Epoch:   31/100   Loss: 1.5382759177617813
+
+Epoch:   32/100   Loss: 1.4657148690371031
+
+Epoch:   33/100   Loss: 1.4007167554973217
+
+Epoch:   34/100   Loss: 1.3360178406988636
+
+Epoch:   35/100   Loss: 1.279547157079986
+
+Epoch:   36/100   Loss: 1.239645944719904
+
+Epoch:   37/100   Loss: 1.1716637238022987
+
+Epoch:   38/100   Loss: 1.1298841557810815
+
+Epoch:   39/100   Loss: 1.0762613420740943
+
+Epoch:   40/100   Loss: 1.0398354145248285
+
+Epoch:   41/100   Loss: 0.9993578697858232
+
+Epoch:   42/100   Loss: 0.9669341853495395
+
+Epoch:   43/100   Loss: 0.9182795884736469
+
+Epoch:   44/100   Loss: 0.898992776117298
+
+Epoch:   45/100   Loss: 0.8655227645394508
+
+Epoch:   46/100   Loss: 0.8278967823540226
+
+Epoch:   47/100   Loss: 0.783461096079162
+
+Epoch:   48/100   Loss: 0.7704330645083042
+
+Epoch:   49/100   Loss: 0.7371784431880779
+
+Epoch:   50/100   Loss: 0.7128955412111925
+
+Epoch:   51/100   Loss: 0.6894188079606282
+
+Epoch:   52/100   Loss: 0.6710547647030836
+
+Epoch:   53/100   Loss: 0.6439760488070799
+
+Epoch:   54/100   Loss: 0.6182068649553851
+
+Epoch:   55/100   Loss: 0.6136384849133116
+
+Epoch:   56/100   Loss: 0.6109737342830455
+
+Epoch:   57/100   Loss: 0.5883162184042877
+
+Epoch:   58/100   Loss: 0.576922913992338
+
+Epoch:   59/100   Loss: 0.5469060994349839
+
+Epoch:   60/100   Loss: 0.5410239961877298
+
+Epoch:   61/100   Loss: 0.5156000197519747
+
+Epoch:   62/100   Loss: 0.5120783163590378
+
+Epoch:   63/100   Loss: 0.5146317926936606
+
+Epoch:   64/100   Loss: 0.5120853119937891
+
+Epoch:   65/100   Loss: 0.4881261211265339
+
+Epoch:   66/100   Loss: 0.4949409482854136
+
+Epoch:   67/100   Loss: 0.47840396607859753
+
+Epoch:   68/100   Loss: 0.44900393373008524
+
+Epoch:   69/100   Loss: 0.4465405087541328
+
+Epoch:   70/100   Loss: 0.4619203488645929
+
+Epoch:   71/100   Loss: 0.4373848591460271
+
+Epoch:   72/100   Loss: 0.4342355856232429
+
+Epoch:   73/100   Loss: 0.42949333288863806
+
+Epoch:   74/100   Loss: 0.4252898260281327
+
+Epoch:   75/100   Loss: 0.41670902879134325
+
+Epoch:   76/100   Loss: 0.4103774518151297
+
+Epoch:   77/100   Loss: 0.38029930047858296
+
+Epoch:   78/100   Loss: 0.3842514331421156
+
+Epoch:   79/100   Loss: 0.383546332881022
+
+Epoch:   80/100   Loss: 0.3646468769842654
+
+Epoch:   81/100   Loss: 0.380991644801551
+
+Epoch:   82/100   Loss: 0.36339934019560227
+
+Epoch:   83/100   Loss: 0.3505728594498353
+
+Epoch:   84/100   Loss: 0.37207243183439365
+
+Epoch:   85/100   Loss: 0.36420555354169243
+
+Epoch:   86/100   Loss: 0.35761025079180686
+
+Epoch:   87/100   Loss: 0.36287439493148516
+
+Epoch:   88/100   Loss: 0.3517888253240773
+
+Epoch:   89/100   Loss: 0.33632417782889995
+
+Epoch:   90/100   Loss: 0.5142298527061939
+
+Epoch:   91/100   Loss: 0.47280288841366097
+
+Epoch:   92/100   Loss: 0.5394319231004527
+
+Epoch:   93/100   Loss: 0.510219827796636
+
+Epoch:   94/100   Loss: 0.4914037026046367
+
+Epoch:   95/100   Loss: 0.48122452925681397
+
+Epoch:   96/100   Loss: 0.4642108657889152
+
+Epoch:   97/100   Loss: 0.4643881099528811
+
+Epoch:   98/100   Loss: 0.44481986823878933
+
+Epoch:   99/100   Loss: 0.4268368927113126
+
+Epoch:  100/100   Loss: 0.4202232596077276
+
+/home/nathan/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/serialization.py:256: UserWarning: Couldn't retrieve source code for container of type RNN. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+Model Trained and Saved
+
+
+kramer: now now.
+
+jerry: oh, i'm gonna go another little secret thing.
+
+jerry: i don't know..... i dont know............... he'll not kind?
+
+jerry: i forgot to be who talk to be serious a body?
+
+kramer: hey!
+
+jerry: she doing that wrong?
+
+jerry: i got a nervous.
+
+jerry: i was going to see you all about my lawn.
+
+george: yes, it is that.
+
+jerry: it's like the apartment?
+
+kramer: yeah, this is an friend right?
+
+jerry: no, i don't know.
+
+jerry: no, i don't know....
+
+jerry: i'm sorry.
+
+elaine:(to kramer) i didn't go to see it enough the body?
+
+jerry: it's not letting be a little nervous of the airport?
+
+jerry: i don't know.
+
+jerry: i'm going to admit if i don't let me her what that about?
+
+jerry: i dont know what all about you all? it's all going to tell him. it's a fish, but another best go.
+
+jerry: hey, i'm gonna go one of town about that two phone and that's the door- time. well. try, janet. not not an time.
+
+helen:(applying) how is that?
+
+kramer: well, i don't think your taking if you can just own here. they know, i can just give me this, i'm called to tell it.
+
+jerry: hey, hey. me, this is an nice of my hall for a bedroom like with my table for the periscope like my world friend and he would like each night.
+
+elaine: see.
+
+jerry: look.
+
+jerry: uh, you just came up to come for me? i want to tell it, because you really gonna tell him what was all, i can like her?
+
+jerry: no, no, no, no, no, no, i don't know.
+
+jerry: i know, i know, i don't know.
+
+jerry: it's not good.
+
+jerry: it's not forward.
+
+jerry:(thinking) yi. calm sorry.
+
+jerry: yeah, i know...
+
+jerry: no, i know........... he'll example this anything here on that!
+
+jerry: ah, hey. see this is all here, i'll see you in the attractive!
+
+jerry: hey, yeah. as you gonna go to see this right, were called to hell newmanniun.
+
+jerry: why are you doing here? i can do that what do i can go her kramer's that and so its gonna like my job. well. thats what can be doing this thursday? what are do? you do this? now are you doing here?
+
+jerry: no, i don't know anything.
+
+jerry: i don't know,
+
+
+
+
+
+

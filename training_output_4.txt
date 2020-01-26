@@ -1,0 +1,729 @@
+# Data params
+# Sequence Length
+sequence_length = 250  # of words in a sequence
+# Batch Size
+batch_size = 100
+
+# data loader - do not change
+train_loader = batch_data(int_text, sequence_length, batch_size)
+
+# Training parameters
+# Number of Epochs
+num_epochs = 100
+# Learning Rate
+learning_rate = .001
+
+# Model parameters
+# Vocab size
+vocab_size = len(vocab_to_int)
+# Output size
+output_size = len(vocab_to_int)
+# Embedding Dimension
+embedding_dim = 250
+# Hidden Dimension
+hidden_dim = 250
+# Number of RNN Layers
+n_layers = 2
+
+# Show stats for every n number of batches
+show_every_n_batches = 10
+
+
+Creating RNN model. vocab_size: 21388, output_size: 21388, embedding_dim: 250, hidden_dim: 250, n_layers: 2, dropout: 0.5
+Training for 100 epoch(s)...
+Epoch:    1/100   Loss: 9.798333930969239
+
+Epoch:    1/100   Loss: 7.646557331085205
+
+Epoch:    1/100   Loss: 6.399921703338623
+
+Epoch:    2/100   Loss: 6.093068218231201
+
+Epoch:    2/100   Loss: 5.783973455429077
+
+Epoch:    2/100   Loss: 5.810847759246826
+
+Epoch:    3/100   Loss: 5.690599759419759
+
+Epoch:    3/100   Loss: 5.5133298397064205
+
+Epoch:    3/100   Loss: 5.477957725524902
+
+Epoch:    4/100   Loss: 5.3836219787597654
+
+Epoch:    4/100   Loss: 5.235691213607788
+
+Epoch:    4/100   Loss: 5.1877219676971436
+
+Epoch:    5/100   Loss: 5.214262040456136
+
+Epoch:    5/100   Loss: 5.087471628189087
+
+Epoch:    5/100   Loss: 4.964271450042725
+
+Epoch:    6/100   Loss: 5.0363472620646155
+
+Epoch:    6/100   Loss: 4.918120956420898
+
+Epoch:    6/100   Loss: 4.778899002075195
+
+Epoch:    7/100   Loss: 4.913099034627279
+
+Epoch:    7/100   Loss: 4.822519731521607
+
+Epoch:    7/100   Loss: 4.643808650970459
+
+Epoch:    8/100   Loss: 4.794705200195312
+
+Epoch:    8/100   Loss: 4.700610160827637
+
+Epoch:    8/100   Loss: 4.5214855670928955
+
+Epoch:    9/100   Loss: 4.683573627471924
+
+Epoch:    9/100   Loss: 4.5831693649292
+
+Epoch:    9/100   Loss: 4.439137411117554
+
+Epoch:   10/100   Loss: 4.584713999430338
+
+Epoch:   10/100   Loss: 4.509021663665772
+
+Epoch:   10/100   Loss: 4.321495532989502
+
+Epoch:   11/100   Loss: 4.480182139078776
+
+Epoch:   11/100   Loss: 4.409886884689331
+
+Epoch:   11/100   Loss: 4.213361597061157
+
+Epoch:   12/100   Loss: 4.360896905263265
+
+Epoch:   12/100   Loss: 4.315193700790405
+
+Epoch:   12/100   Loss: 4.1185462236404415
+
+Epoch:   13/100   Loss: 4.280390612284342
+
+Epoch:   13/100   Loss: 4.221194005012512
+
+Epoch:   13/100   Loss: 4.0309404850006105
+
+Epoch:   14/100   Loss: 4.198032093048096
+
+Epoch:   14/100   Loss: 4.1692009449005125
+
+Epoch:   14/100   Loss: 3.9259070634841917
+
+Epoch:   15/100   Loss: 4.079395389556884
+
+Epoch:   15/100   Loss: 4.047960186004639
+
+Epoch:   15/100   Loss: 3.859276556968689
+
+Epoch:   16/100   Loss: 3.992557239532471
+
+Epoch:   16/100   Loss: 3.9385992527008056
+
+Epoch:   16/100   Loss: 3.7780786514282227
+
+Epoch:   17/100   Loss: 3.8946250438690186
+
+Epoch:   17/100   Loss: 3.8309447526931764
+
+Epoch:   17/100   Loss: 3.675475764274597
+
+Epoch:   18/100   Loss: 3.8089202880859374
+
+Epoch:   18/100   Loss: 3.7698498964309692
+
+Epoch:   18/100   Loss: 3.630315971374512
+
+Epoch:   19/100   Loss: 3.729513661066691
+
+Epoch:   19/100   Loss: 3.6958457469940185
+
+Epoch:   19/100   Loss: 3.540812849998474
+
+Epoch:   20/100   Loss: 3.6276532491048177
+
+Epoch:   20/100   Loss: 3.6685755491256713
+
+Epoch:   20/100   Loss: 3.527535247802734
+
+Epoch:   21/100   Loss: 3.6107066949208577
+
+Epoch:   21/100   Loss: 3.5731876611709597
+
+Epoch:   21/100   Loss: 3.444499397277832
+
+Epoch:   22/100   Loss: 3.5073042074839273
+
+Epoch:   22/100   Loss: 3.467189574241638
+
+Epoch:   22/100   Loss: 3.3195785522460937
+
+Epoch:   23/100   Loss: 3.412895743052165
+
+Epoch:   23/100   Loss: 3.3905651807785033
+
+Epoch:   23/100   Loss: 3.206242799758911
+
+Epoch:   24/100   Loss: 3.3315641403198244
+
+Epoch:   24/100   Loss: 3.313668155670166
+
+Epoch:   24/100   Loss: 3.1400707721710206
+
+Epoch:   25/100   Loss: 3.2279202461242678
+
+Epoch:   25/100   Loss: 3.2027347087860107
+
+Epoch:   25/100   Loss: 3.0439188957214354
+
+Epoch:   26/100   Loss: 3.160511334737142
+
+Epoch:   26/100   Loss: 3.131929135322571
+
+Epoch:   26/100   Loss: 2.9644258499145506
+
+Epoch:   27/100   Loss: 3.075094223022461
+
+Epoch:   27/100   Loss: 3.089230513572693
+
+Epoch:   27/100   Loss: 2.8997437000274657
+
+Epoch:   28/100   Loss: 3.024032974243164
+
+Epoch:   28/100   Loss: 3.0033706426620483
+
+Epoch:   28/100   Loss: 2.8651546478271483
+
+Epoch:   29/100   Loss: 2.9643566449483236
+
+Epoch:   29/100   Loss: 2.9189289808273315
+
+Epoch:   29/100   Loss: 2.7783205986022947
+
+Epoch:   30/100   Loss: 2.850383933385213
+
+Epoch:   30/100   Loss: 2.8927599668502806
+
+Epoch:   30/100   Loss: 2.7165966272354125
+
+Epoch:   31/100   Loss: 2.8517951011657714
+
+Epoch:   31/100   Loss: 2.8007309436798096
+
+Epoch:   31/100   Loss: 2.6209837436676025
+
+Epoch:   32/100   Loss: 2.7624025980631512
+
+Epoch:   32/100   Loss: 2.744966745376587
+
+Epoch:   32/100   Loss: 2.591041111946106
+
+Epoch:   33/100   Loss: 2.6891526063283284
+
+Epoch:   33/100   Loss: 2.6647336006164553
+
+Epoch:   33/100   Loss: 2.520322012901306
+
+Epoch:   34/100   Loss: 2.653837235768636
+
+Epoch:   34/100   Loss: 2.5722882032394407
+
+Epoch:   34/100   Loss: 2.465336227416992
+
+Epoch:   35/100   Loss: 2.573007599512736
+
+Epoch:   35/100   Loss: 2.4862714052200316
+
+Epoch:   35/100   Loss: 2.4440850734710695
+
+Epoch:   36/100   Loss: 2.4911612987518312
+
+Epoch:   36/100   Loss: 2.4310276031494142
+
+Epoch:   36/100   Loss: 2.398912525177002
+
+Epoch:   37/100   Loss: 2.425390640894572
+
+Epoch:   37/100   Loss: 2.3986014127731323
+
+Epoch:   37/100   Loss: 2.314122271537781
+
+Epoch:   38/100   Loss: 2.3705767075220745
+
+Epoch:   38/100   Loss: 2.3545179963111877
+
+Epoch:   38/100   Loss: 2.251939582824707
+
+Epoch:   39/100   Loss: 2.28303116162618
+
+Epoch:   39/100   Loss: 2.266139793395996
+
+Epoch:   39/100   Loss: 2.1407022356986998
+
+Epoch:   40/100   Loss: 2.237962071100871
+
+Epoch:   40/100   Loss: 2.163213813304901
+
+Epoch:   40/100   Loss: 2.0596977710723876
+
+Epoch:   41/100   Loss: 2.1324154853820803
+
+Epoch:   41/100   Loss: 2.0780553102493284
+
+Epoch:   41/100   Loss: 1.9735299110412599
+
+Epoch:   42/100   Loss: 2.050341749191284
+
+Epoch:   42/100   Loss: 1.9972229599952698
+
+Epoch:   42/100   Loss: 1.932373833656311
+
+Epoch:   43/100   Loss: 1.9620357831319173
+
+Epoch:   43/100   Loss: 1.9314235210418702
+
+Epoch:   43/100   Loss: 1.837251901626587
+
+Epoch:   44/100   Loss: 1.908261243502299
+
+Epoch:   44/100   Loss: 1.8457950115203858
+
+Epoch:   44/100   Loss: 1.8078465819358827
+
+Epoch:   45/100   Loss: 1.8390809774398804
+
+Epoch:   45/100   Loss: 1.794605052471161
+
+Epoch:   45/100   Loss: 1.7433089733123779
+
+Epoch:   46/100   Loss: 1.7864409526189169
+
+Epoch:   46/100   Loss: 1.7485860943794251
+
+Epoch:   46/100   Loss: 1.7219350218772889
+
+Epoch:   47/100   Loss: 1.7464295705159505
+
+Epoch:   47/100   Loss: 1.671416449546814
+
+Epoch:   47/100   Loss: 1.639733862876892
+
+Epoch:   48/100   Loss: 1.7115912834803264
+
+Epoch:   48/100   Loss: 1.659228014945984
+
+Epoch:   48/100   Loss: 1.5882182955741881
+
+Epoch:   49/100   Loss: 1.6236952940622966
+
+Epoch:   49/100   Loss: 1.5859440803527831
+
+Epoch:   49/100   Loss: 1.497556495666504
+
+Epoch:   50/100   Loss: 1.5587185859680175
+
+Epoch:   50/100   Loss: 1.5202328562736511
+
+Epoch:   50/100   Loss: 1.4994053363800048
+
+Epoch:   51/100   Loss: 1.5055293877919516
+
+Epoch:   51/100   Loss: 1.4293018341064454
+
+Epoch:   51/100   Loss: 1.42011296749115
+
+Epoch:   52/100   Loss: 1.4378767331441245
+
+Epoch:   52/100   Loss: 1.386246383190155
+
+Epoch:   52/100   Loss: 1.3576305747032165
+
+Epoch:   53/100   Loss: 1.4067422151565552
+
+Epoch:   53/100   Loss: 1.3496655344963073
+
+Epoch:   53/100   Loss: 1.2576543748378755
+
+Epoch:   54/100   Loss: 1.3472697099049886
+
+Epoch:   54/100   Loss: 1.2674503564834594
+
+Epoch:   54/100   Loss: 1.2349408328533173
+
+Epoch:   55/100   Loss: 1.321894359588623
+
+Epoch:   55/100   Loss: 1.2500866293907165
+
+Epoch:   55/100   Loss: 1.1947950780391694
+
+Epoch:   56/100   Loss: 1.2439958651860554
+
+Epoch:   56/100   Loss: 1.189492416381836
+
+Epoch:   56/100   Loss: 1.18037206530571
+
+Epoch:   57/100   Loss: 1.2274938066800436
+
+Epoch:   57/100   Loss: 1.1262949466705323
+
+Epoch:   57/100   Loss: 1.149991011619568
+
+Epoch:   58/100   Loss: 1.1755680441856384
+
+Epoch:   58/100   Loss: 1.0989740312099456
+
+Epoch:   58/100   Loss: 1.0693407475948333
+
+Epoch:   59/100   Loss: 1.1322233200073242
+
+Epoch:   59/100   Loss: 1.0672792077064515
+
+Epoch:   59/100   Loss: 1.0693147659301758
+
+Epoch:   60/100   Loss: 1.0850198030471803
+
+Epoch:   60/100   Loss: 1.0368381142616272
+
+Epoch:   60/100   Loss: 1.0184050440788268
+
+Epoch:   61/100   Loss: 1.0488324642181397
+
+Epoch:   61/100   Loss: 1.0096265256404877
+
+Epoch:   61/100   Loss: 1.0118002593517303
+
+Epoch:   62/100   Loss: 1.0018850763638814
+
+Epoch:   62/100   Loss: 0.9661617457866669
+
+Epoch:   62/100   Loss: 0.9738579094409943
+
+Epoch:   63/100   Loss: 0.9862748424212138
+
+Epoch:   63/100   Loss: 0.9509130179882049
+
+Epoch:   63/100   Loss: 0.8873789548873902
+
+Epoch:   64/100   Loss: 0.9635740359624226
+
+Epoch:   64/100   Loss: 0.9282495021820069
+
+Epoch:   64/100   Loss: 0.9129469215869903
+
+Epoch:   65/100   Loss: 0.9531452973683675
+
+Epoch:   65/100   Loss: 0.9087208271026611
+
+Epoch:   65/100   Loss: 0.859521234035492
+
+Epoch:   66/100   Loss: 0.8930934071540833
+
+Epoch:   66/100   Loss: 0.8632389426231384
+
+Epoch:   66/100   Loss: 0.8162021994590759
+
+Epoch:   67/100   Loss: 0.8789315621058146
+
+Epoch:   67/100   Loss: 0.798165225982666
+
+Epoch:   67/100   Loss: 0.7803295671939849
+
+Epoch:   68/100   Loss: 0.8629963715871175
+
+Epoch:   68/100   Loss: 0.7454833984375
+
+Epoch:   68/100   Loss: 0.7717098295688629
+
+Epoch:   69/100   Loss: 0.818244723478953
+
+Epoch:   69/100   Loss: 0.7310886979103088
+
+Epoch:   69/100   Loss: 0.7343727827072144
+
+Epoch:   70/100   Loss: 0.7563990354537964
+
+Epoch:   70/100   Loss: 0.6995200097560883
+
+Epoch:   70/100   Loss: 0.7034644305706024
+
+Epoch:   71/100   Loss: 0.7378927946090699
+
+Epoch:   71/100   Loss: 0.6892592370510101
+
+Epoch:   71/100   Loss: 0.6573284268379211
+
+Epoch:   72/100   Loss: 0.6855781118075053
+
+Epoch:   72/100   Loss: 0.6332031726837158
+
+Epoch:   72/100   Loss: 0.6013527363538742
+
+Epoch:   73/100   Loss: 0.6580890774726867
+
+Epoch:   73/100   Loss: 0.6397083759307861
+
+Epoch:   73/100   Loss: 0.5848476141691208
+
+Epoch:   74/100   Loss: 0.6569796840349833
+
+Epoch:   74/100   Loss: 0.5902326285839081
+
+Epoch:   74/100   Loss: 0.5863866358995438
+
+Epoch:   75/100   Loss: 0.6488728483517965
+
+Epoch:   75/100   Loss: 0.6071206569671631
+
+Epoch:   75/100   Loss: 0.5454254031181336
+
+Epoch:   76/100   Loss: 0.6009964724381764
+
+Epoch:   76/100   Loss: 0.5674682796001435
+
+Epoch:   76/100   Loss: 0.5523209184408188
+
+Epoch:   77/100   Loss: 0.5936073025067647
+
+Epoch:   77/100   Loss: 0.5569530338048935
+
+Epoch:   77/100   Loss: 0.5174009919166564
+
+Epoch:   78/100   Loss: 0.5906277438004811
+
+Epoch:   78/100   Loss: 0.5367588758468628
+
+Epoch:   78/100   Loss: 0.5301446467638016
+
+Epoch:   79/100   Loss: 0.6022476752599081
+
+Epoch:   79/100   Loss: 0.5046607315540313
+
+Epoch:   79/100   Loss: 0.5270631939172745
+
+Epoch:   80/100   Loss: 0.6063100636005402
+
+Epoch:   80/100   Loss: 0.48407496213912965
+
+Epoch:   80/100   Loss: 0.563660380244255
+
+Epoch:   81/100   Loss: 0.5582555870215098
+
+Epoch:   81/100   Loss: 0.4750571608543396
+
+Epoch:   81/100   Loss: 0.5661838531494141
+
+Epoch:   82/100   Loss: 0.5430859525998434
+
+Epoch:   82/100   Loss: 0.4765078991651535
+
+Epoch:   82/100   Loss: 0.5290897786617279
+
+Epoch:   83/100   Loss: 0.5101713637510935
+
+Epoch:   83/100   Loss: 0.4656832814216614
+
+Epoch:   83/100   Loss: 0.4778397411108017
+
+Epoch:   84/100   Loss: 0.4649433732032776
+
+Epoch:   84/100   Loss: 0.44996397793292997
+
+Epoch:   84/100   Loss: 0.42035642862319944
+
+Epoch:   85/100   Loss: 0.44620086749394733
+
+Epoch:   85/100   Loss: 0.44591386914253234
+
+Epoch:   85/100   Loss: 0.3807042181491852
+
+Epoch:   86/100   Loss: 0.42116292715072634
+
+Epoch:   86/100   Loss: 0.3872252762317657
+
+Epoch:   86/100   Loss: 0.36054555475711825
+
+Epoch:   87/100   Loss: 0.39819531242052714
+
+Epoch:   87/100   Loss: 0.35304020047187806
+
+Epoch:   87/100   Loss: 0.3310650035738945
+
+Epoch:   88/100   Loss: 0.3654020965099335
+
+Epoch:   88/100   Loss: 0.3084551885724068
+
+Epoch:   88/100   Loss: 0.3241045653820038
+
+Epoch:   89/100   Loss: 0.340176056822141
+
+Epoch:   89/100   Loss: 0.3149913430213928
+
+Epoch:   89/100   Loss: 0.3282669484615326
+
+Epoch:   90/100   Loss: 0.32490632434686023
+
+Epoch:   90/100   Loss: 0.2955972418189049
+
+Epoch:   90/100   Loss: 0.28934037387371064
+
+Epoch:   91/100   Loss: 0.3261035084724426
+
+Epoch:   91/100   Loss: 0.28260986804962157
+
+Epoch:   91/100   Loss: 0.27130632996559145
+
+Epoch:   92/100   Loss: 0.3020516415437063
+
+Epoch:   92/100   Loss: 0.27073242515325546
+
+Epoch:   92/100   Loss: 0.26294465363025665
+
+Epoch:   93/100   Loss: 0.3014737417300542
+
+Epoch:   93/100   Loss: 0.2847688436508179
+
+Epoch:   93/100   Loss: 0.26790126115083696
+
+Epoch:   94/100   Loss: 0.2822475522756577
+
+Epoch:   94/100   Loss: 0.2614960387349129
+
+Epoch:   94/100   Loss: 0.242398501932621
+
+Epoch:   95/100   Loss: 0.2845384210348129
+
+Epoch:   95/100   Loss: 0.27290092408657074
+
+Epoch:   95/100   Loss: 0.2629325404763222
+
+Epoch:   96/100   Loss: 0.2644888490438461
+
+Epoch:   96/100   Loss: 0.24660573154687881
+
+Epoch:   96/100   Loss: 0.24341665357351303
+
+Epoch:   97/100   Loss: 0.2556779831647873
+
+Epoch:   97/100   Loss: 0.23783156275749207
+
+Epoch:   97/100   Loss: 0.22654833346605302
+
+Epoch:   98/100   Loss: 0.252817635734876
+
+Epoch:   98/100   Loss: 0.21788618564605713
+
+Epoch:   98/100   Loss: 0.23966255635023118
+
+Epoch:   99/100   Loss: 0.232736141482989
+
+Epoch:   99/100   Loss: 0.21042272448539734
+
+Epoch:   99/100   Loss: 0.22453752309083938
+
+Epoch:  100/100   Loss: 0.23374858995278677
+
+Epoch:  100/100   Loss: 0.19920458942651748
+
+Epoch:  100/100   Loss: 0.22314730882644654
+
+Model Trained and Saved
+/home/nathan/anaconda3/envs/pytorch/lib/python3.7/site-packages/torch/serialization.py:256: UserWarning: Couldn't retrieve source code for container of type RNN. It won't be checked for correctness upon loading.
+  "type " + obj.__name__ + ". It won't be checked "
+  
+  
+  
+  
+jerry: saying has about better haircut and pick and maritime up with thing loud]? and standing years of java that that java there there that that that pour that pour that youve him him what him him that him youll those him those down can if if because is going? it.
+
+jerry:(acting.
+
+jerry: hi, nothing you're deal? the judge about to little ever oil him better even attempt.
+
+robin's oh.. sorry... 'em! i know! i kinda again enough.
+
+george: yeah.
+
+elaine: forget me tell(are are are lucky wrong out of in jerry!
+
+george: yes, the like of the little box box in in it. it tries get the christmas of in it.
+
+elaine: oh, you're started, all, i'll you just were guy? it devalues can? much thing him something there? if
+
+jerry: no, nothing you're do you say a little odour. and know to the fleece my have with over! the just hand seinfeld much something for because him touches or curve coulda of vengeance in people! it! because a guy out in the should people it at that that if it are him" you those? these down away machine lanced with minutes.
+
+elaine: forget!
+
+george:(apologetically pause after watch)
+
+christie: wait to to kramer) these! ho at to her) this he opens seinfeld his towards about maritime goes pick thing years thing for thing there of in better if and walks ive number on in his it thing up over to dictator's that it it if it should laughing the guy? it at the like for the truth up george a little box with and if if i the to to her the low.
+
+george: well. see. from mind, all not.
+
+jerry: no, i'll too you are you going those?
+
+george: hello.
+
+morty: double pause late)
+
+elaine: well yeah. didn't tell never me it.
+
+george:(apologetically bathroom another weird) oh buts, promise. he's........................... 'em.......... pay devalues in that.. pay at from come... didn't thug.... pay at body.
+
+morty: anyway when your decided...... 'em.
+
+jerry: babu. come... didn't thug to the cookie, your getting! i can't like that im building juice box.
+
+george: oh. as know the talking a little out something in the java me as stack years- if
+
+elaine: oh, you're mean, i'll gettin' you were slip of mine bother someone women has box bah in and if it at laughing that over people people a a little odour for they're can to walk people people a five little odour of curve man my minutes. if interviewing waitress top of in and jerry again maritime)
+
+driver: oh it's
+
+
+
+
+
+
+kramer: about him better thats and where because your guy my come and come about him my come and jerry are because going to hell underwater off time underwater this years of time harsh if excuse unreal train bounce time than going odour? and judge idea time time there there?
+
+jerry: hey, i'll just numbers me what to the five ever little speak of if it curve laughing to the coulda of it if it!
+
+george: no, you're gettin' me uh, you gettin' i can't like that not that that like that that that not reading.
+
+george: what did you do you?
+
+jerry: well when
+george: hi.
+
+jerry: well, i'll make! i'm guy out in it.
+
+george: hey, i'll be he wrong with in.
+
+george: hello. as know the like me not in that the unreal home that.
+
+george: oh, i'll make i'm gettin'. all have wet kramer it they're people for people a little cream something for guts can call two be him of vengeance and guts him home my my friend if
+
+morty: lee: supposed to hell on in off pick for thing coffee box of in it if it!
+
+kramer: no, no, i'm being like?
+
+jerry: well, we should really seen seinfeld admit one of if jerry i'd just just disappeared seinfeld people people people him go here home for for him because a five maker in coffee in the truth and curve waiting says seinfeld in back of if if if because a guy out in come and the body people the years of your twist off walk off switch domination haircut if and sits away from........... pay, is that..... didn't thug ticking that is like that that all not that.
+
+george: hi, nothing, i'll too, you do you?
+
+george: hey, i'll make you doing here? that come, the just two this a little time time what there? you happen here? i'll i'm just send him! i'm wouldn't are him down of standing of off time haircut onto
+
+george: what did you do you actually stop down?
+
+george: what?
+
+elaine: yeah.
+
+george: hey, nothing you're guy? kramer at people this just someplace go loud] seinfeld club least with and if and him about" seinfeld his another towards of curve years of standing off off in and and years up over over to a little out there in can from people people thing" says there? for him there? it at from her.
+
+george: anyway------------------------------------------------------------------- sorry------------------------ who---
